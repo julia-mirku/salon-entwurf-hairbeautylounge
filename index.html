@@ -410,21 +410,22 @@ h2,.voucher h2,.person span{text-wrap:balance}
   .tile .tl{margin:0!important}
 }
 .h1acc{color:#f3d6c8;font-style:italic}
+.nowr{white-space:nowrap}
 .hero .kicker,.hero .hinfo,.htx>p:not(.hshort),.hero .facts{display:none!important}
 .hpill{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.28);color:#fff;text-decoration:none;font:500 14px Inter;letter-spacing:.02em}
 .hpill i{width:7px;height:7px;border-radius:50%;background:#f3d6c8}
 .hpill:hover{background:rgba(255,255,255,.24)}
-.hshort{display:block;white-space:nowrap;margin:18px 0 0;font:500 14px Inter;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.hero p.hshort{display:block;white-space:nowrap;margin:18px 0 0;font:500 14px Inter;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.9)}
 .hero h1{margin-bottom:22px}
 @media (max-width:700px){
   .hero .kicker,.hero .hinfo,.htx>p:not(.hshort){display:none!important}
   .hero h1{font-size:46px;line-height:1.02;margin:6px 0 14px;text-shadow:0 2px 24px rgba(0,0,0,.35)}
   .hpill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.28);color:#fff;text-decoration:none;font:500 13px Inter;letter-spacing:.02em}
   .hpill i{width:7px;height:7px;border-radius:50%;background:#f3d6c8}
-  .hshort{display:block;white-space:nowrap;margin:14px 0 0;font:500 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+  .hero p.hshort{display:block;white-space:nowrap;margin:14px 0 0;font:500 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.9)}
   .hero .wrap{padding-top:34px!important}
 }
-@media (max-width:380px){.hshort{letter-spacing:.07em;font-size:11.5px}}
+@media (max-width:380px){.hero p.hshort{letter-spacing:.07em;font-size:11.5px}.men .mtx.mtx{padding:28px 18px}.men{grid-template-columns:minmax(0,1fr)}}
 .htx>*,.qb{animation:none!important;opacity:1!important}
 .wunsch label{color:rgba(255,255,255,.85)!important}
 @media (max-width:520px){.quick:not(:has([data-f])){display:grid;grid-template-columns:1fr 1fr;gap:8px}.quick:not(:has([data-f])) .chip{text-align:center}}
@@ -629,7 +630,7 @@ input:focus,textarea:focus{outline:none;border-color:var(--gold)}
         <div class="hinfo"><span>Kirchplatz 4, Bad Saulgau</span><span id="htoday"></span></div>
         <h1>Ihr Friseur in<br><span class="h1acc">Bad Saulgau.</span></h1>
         <a class="hpill" href="#kontakt"><i></i>Kirchplatz 4 · Mitten in der Altstadt</a>
-        <p class="hshort">Schnitt · Farbe · Braut · Beauty</p>
+        <p class="hshort"><a class="go" href="#preise" data-go="Damen">Damen</a> · <a class="go" href="#preise" data-go="Herren">Herren</a> · <a class="go" href="#preise" data-go="Kinder">Kinder</a> · <a class="go" href="#preise" data-go="Farbe">Farbe</a> · <a class="go" href="#preise" data-go="Braut">Braut</a></p>
         <p>Schnitt, Farbe, Brautstyling und Kosmetik unter einem Dach – mit ehrlicher Beratung und viel Liebe zum Detail.</p>
         <div class="facts">
           <div><b><a class="go" href="#preise" data-go="Damen">Damen</a> · <a class="go" href="#preise" data-go="Herren">Herren</a> · <a class="go" href="#preise" data-go="Kinder">Kinder</a></b>Alle Haarlängen</div>
@@ -692,7 +693,7 @@ input:focus,textarea:focus{outline:none;border-color:var(--gold)}
         <div class="mtx">
           <div class="kicker" style="color:#d79aab">Für Herren</div>
           <h2 class="serif">Schnitt &amp; Bart, schnell und gepflegt</h2>
-          <p><a class="go" href="#" data-book data-cat="Herren" data-svc="Maschinenhaarschnitt">Maschinenhaarschnitt 19,50&nbsp;€</a>, <a class="go" href="#" data-book data-cat="Herren" data-svc="Bartkürzen">Bartkürzen 9,50&nbsp;€</a>. Im November: <a class="go" href="#" data-book data-cat="Angebote" data-svc="Herren-Aktion November">Herren-Aktion für 25&nbsp;€</a>.</p>
+          <p><a class="go" href="#" data-book data-cat="Herren" data-svc="Maschinenhaarschnitt">Maschinenhaarschnitt 19,50&nbsp;€</a>, <a class="go" href="#" data-book data-cat="Herren" data-svc="Bartkürzen">Bartkürzen 9,50&nbsp;€</a>.<br><span class="nowr">Im November: <a class="go" href="#" data-book data-cat="Angebote" data-svc="Herren-Aktion November">Herren-Aktion für 25&nbsp;€</a>.</span></p>
           <button class="btn gold" data-book data-cat="Herren">Herren-Termin buchen</button>
         </div>
       </div>
