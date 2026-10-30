@@ -1316,6 +1316,49 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
 @media (max-width:900px) and (max-height:500px){.sticky{display:none!important}.svcp .sphd{height:110px}}
 .kib.kih{text-shadow:0 1px 3px rgba(0,0,0,.55)}
 @media (max-width:700px){dialog.svcp .lx{right:6px;width:36px;height:36px;font-size:24px}.svcp .srow .p{padding-right:8px}}
+/* Runde 5 (30.10) */
+.svcp .srow .p{padding-right:8px}
+@media (max-width:900px) and (max-height:500px){.split .ph{aspect-ratio:auto;height:140px}}
+dialog.legal.ds :is(h3,p,ul){padding-right:34px}
+dialog.legal.ds .lx{width:30px;height:30px;font-size:21px;transform:translateX(16px)}
+@media (min-width:701px) and (max-width:1199px){.abar b{order:1}.abar em{order:2}.abar::after{content:"";flex-basis:100%;order:2}.abar .al{order:3}.abar i{order:4}}
+@media (min-width:901px) and (max-width:1179px){.nav ul{gap:16px;margin-left:92px}}
+/* Runde 6 (30.10) */
+dialog.legal.ds{overflow-x:hidden}
+@media (min-width:901px) and (max-height:500px){.svcp .sphd{height:110px}}
+@media (min-width:901px) and (max-width:1179px){.gift .glogo2{font-size:19px!important}.gift .gr .glabel{font-size:10px;letter-spacing:.12em}}
+@media (min-width:901px) and (max-width:1000px){.gift .glogo2{font-size:17px!important}}
+@media (min-width:701px){.voucher{padding-top:0;padding-bottom:0}}
+@media (max-width:700px){.voucher{padding-top:0}}
+.voucher h2{margin-top:8px}
+.svcp .pnote{margin-left:0;margin-right:0}
+@media (min-width:901px){.tiles{grid-template-columns:repeat(4,minmax(0,1fr))}}
+html{scrollbar-gutter:stable}
+/* Aktion-Plaketten nie über das KI-Zeichen (auch bei längerem Text, z. B. übersetzt) */
+.svc .deal{max-width:calc(100% - 52px);white-space:normal;overflow-wrap:anywhere}
+/* Megafon in der Aktionsleiste */
+.abar .mega{width:1.07em;height:.95em;vertical-align:-.12em;margin-right:.3em;transform-origin:30% 60%;animation:megaWackel 5s ease-in-out infinite}
+.abar .mega .mw1,.abar .mega .mw2,.abar .mega .mw3{animation:megaWelle 5s ease-in-out infinite}
+.abar .mega .mw2{animation-delay:.15s}
+.abar .mega .mw3{animation-delay:.3s}
+@keyframes megaWackel{0%,80%,100%{transform:rotate(0)}84%{transform:rotate(-14deg)}88%{transform:rotate(9deg)}92%{transform:rotate(-6deg)}96%{transform:rotate(2deg)}}
+@keyframes megaWelle{0%,80%,100%{opacity:1}86%{opacity:.25}92%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.abar .mega,.abar .mega path{animation:none}}
+/* Tablet hochkant (701–900): ruhiger */
+@media (min-width:701px) and (max-width:900px){
+ .brands ul{flex-wrap:nowrap;gap:10px}.brands li{flex:1 1 0;min-width:0;padding:18px 8px 16px}.brands li img{max-width:100%;height:auto}
+ .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .voucher .gift{width:min(540px,100%);margin-left:auto;margin-right:auto}
+ #team .split .ph{aspect-ratio:auto;height:440px;margin-left:0;margin-right:0}
+ #team .team{max-width:none;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px) and (max-height:500px){#team .split .ph{height:140px}}
+/* größere Tippfläche für kleine Links, Aussehen gleich */
+.hshort .go,.allp,.tl2{position:relative}
+.hshort .go::after,.allp::after,.tl2::after{content:"";position:absolute;left:-6px;right:-6px;top:-10px;bottom:-10px}
+.brands li span{font-size:12px}
+@media (min-width:701px) and (max-width:800px){.brands li b{font-size:14px}}
+.tl2::after{top:-5px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":["HairSalon","BeautySalon"],
@@ -1334,7 +1377,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
 <body id="top">
 
 
-<a class="abar" href="#" data-book data-cat="Angebote" role="button" aria-haspopup="dialog"><b>Jubiläums-Aktion im November</b><em>Ein Jahr Hair &amp; Beauty Lounge!</em><span class="al">Strähnen-Paket ab&nbsp;149&nbsp;€ · Herrenschnitt nach Wunsch&nbsp;25&nbsp;€ · Kinder ab&nbsp;10&nbsp;€</span><span class="as">Strähnen-Paket ab&nbsp;149&nbsp;€ · Kinder ab&nbsp;10&nbsp;€<br>Herrenschnitt nach Wunsch&nbsp;25&nbsp;€&nbsp;→</span><i>Jetzt buchen&nbsp;→</i></a>
+<a class="abar" href="#" data-book data-cat="Angebote" role="button" aria-haspopup="dialog"><b><svg class="mega" viewBox="0 0 27 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.2v3.6c0 .6.5 1.1 1.1 1.1h1.9l7 4.1V5L6.5 9.1H4.6c-.6 0-1.1.5-1.1 1.1z"/><path d="M7.2 15l1.4 4.3"/><path class="mw1" d="M16.6 9.6a3.4 3.4 0 0 1 0 4.8"/><path class="mw2" d="M19.2 7.2a7 7 0 0 1 0 9.6"/><path class="mw3" d="M21.8 4.6a10.6 10.6 0 0 1 0 14.8"/></svg>Jubiläums-Aktion im November</b><em>Ein Jahr Hair &amp; Beauty Lounge!</em><span class="al">Strähnen-Paket ab&nbsp;149&nbsp;€ · Herrenschnitt nach Wunsch&nbsp;25&nbsp;€ · Kinder ab&nbsp;10&nbsp;€</span><span class="as">Strähnen-Paket ab&nbsp;149&nbsp;€ · Kinder ab&nbsp;10&nbsp;€<br>Herrenschnitt nach Wunsch&nbsp;25&nbsp;€&nbsp;→</span><i>Jetzt buchen&nbsp;→</i></a>
 <header>
   <div class="wrap nav">
     <a class="logo" href="#top" aria-label="Hair &amp; Beauty Lounge by Melanie Maurus"><span class="lt">Hair<i class="lgap"></i>&amp; Beauty</span><span class="ls">lounge</span><span class="lb">by Melanie Maurus</span></a>
@@ -1426,7 +1469,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
         <button type="button" class="card svc reveal" data-open="keratin" aria-haspopup="dialog"><span class="ph" role="img" aria-label="Glattes, glänzendes Haar nach der Keratin-Glättung" data-bg="m_extensions.webp?v=9"><span class="kib">KI</span></span><span class="bd"><span class="st">Keratin-Glättung</span><span class="from">ab&nbsp;239&nbsp;€</span><span class="more">Alle Preise &amp; mehr →</span></span></button>
         <button type="button" class="card svc reveal" data-open="ext" aria-haspopup="dialog"><span class="ph" role="img" aria-label="Extensions werden eingesetzt" data-bg="m_svc_ext.webp?v=9"><span class="kib">KI</span></span><span class="bd"><span class="st">Extensions</span><span class="from">ab&nbsp;199&nbsp;€</span><span class="more">Alle Preise &amp; mehr →</span></span></button>
         <button type="button" class="card svc reveal" data-open="brauen" aria-haspopup="dialog"><span class="ph" role="img" aria-label="Make-up wird aufgetragen" data-bg="m_svc_makeup.webp?v=7"><span class="kib">KI</span></span><span class="bd"><span class="st">Brauen, Wimpern &amp; Make-up</span><span class="from">ab&nbsp;9,50&nbsp;€</span><span class="more">Alle Preise &amp; mehr →</span></span></button>
-        <button type="button" class="card svc reveal" data-open="makeup" aria-haspopup="dialog"><span class="ph" role="img" aria-label="Permanent-Make-up der Augenbrauen" data-bg="m_svc_pmu.webp?v=1"><span class="kib">KI</span></span><span class="bd"><span class="st">Permanent-Make-up</span><span class="from">ab&nbsp;350&nbsp;€</span><span class="more">Alle Preise &amp; mehr →</span></span></button>
+        <button type="button" class="card svc reveal" data-open="makeup" aria-haspopup="dialog"><span class="ph" role="img" aria-label="Permanent-Make-up der Augenbrauen" data-bg="m_svc_pmu.webp?v=2"><span class="kib">KI</span></span><span class="bd"><span class="st">Permanent-Make-up</span><span class="from">ab&nbsp;350&nbsp;€</span><span class="more">Alle Preise &amp; mehr →</span></span></button>
         <button type="button" class="card svc reveal" data-open="wax" aria-haspopup="dialog"><span class="ph" role="img" aria-label="Waxing, glatte Haut" data-bg="m_svc_waxing_B.webp?v=4"><span class="kib">KI</span></span><span class="bd"><span class="st">Waxing</span><span class="from">ab&nbsp;25&nbsp;€</span><span class="more">Alle Preise &amp; mehr →</span></span></button>
       </div>
     </div>
@@ -1439,7 +1482,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
         <ul>
           <li><div class="blogo"><img src="brand_glynt.webp" alt="GLYNT" width="122" height="36" loading="lazy"></div><b>GLYNT</b><span>Haarfarben</span></li>
           <li><div class="blogo"><img src="brand_trinity.webp" alt="TRINITY haircare" width="155" height="52" loading="lazy"></div><b>TRINITY haircare</b><span>Haarpflege</span></li>
-          <li><div class="blogo"><img src="brand_flaunt.webp" alt="FLAUNT by Paul Mitchell" width="146" height="47" loading="lazy"></div><b>FLAUNT by Paul Mitchell</b><span>Extensions &amp; Pflege</span></li>
+          <li><div class="blogo"><img src="brand_flaunt.webp" alt="FLAUNT by Paul Mitchell" width="146" height="47" loading="lazy"></div><b>FLAUNT by&nbsp;Paul&nbsp;Mitchell</b><span>Extensions &amp; Pflege</span></li>
           <li><div class="blogo"><img src="brand_cocochoco.webp" alt="COCOCHOCO Professional" width="150" height="44" loading="lazy"></div><b>COCOCHOCO</b><span>Keratin-Glättung</span></li>
           <li><div class="blogo"><img src="brand_longtime.webp" alt="Longtime Hair" width="58" height="52" loading="lazy"></div><b>Longtime Hair</b><span>Bonding- &amp; Nano-Ring-Extensions</span></li>
         </ul>
@@ -1527,15 +1570,15 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
       <div class="head"><div class="kicker dark">So findet ihr uns</div><h2>Wir freuen uns auf euch</h2><p>Mitten in der Altstadt von Bad Saulgau. Gut erreichbar auch aus Herbertingen, Altshausen, Bad Buchau, Ostrach, Mengen und Umgebung. Im Salon gibt es außerdem einen Hermes PaketShop.</p></div>
       <div class="tiles">
         <div class="tile tcall"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="tl">Anrufen</span><a class="tnum" href="tel:+49758151698"><b>07581&nbsp;51698</b></a><a class="tl2" href="tel:+4975812007711">oder 07581&nbsp;2007711</a></div>
-        <a class="tile" href="mailto:meli_m_3112@icloud.com"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><span class="tl">E-Mail schreiben</span><b>meli_m_3112@icloud.com</b></a>
-        <a class="tile" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kirchplatz+4,+88348+Bad+Saulgau"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span class="tl">Route planen</span><b>Kirchplatz 4, Bad Saulgau</b></a>
+        <a class="tile" href="mailto:meli_m_3112@icloud.com"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><span class="tl">E-Mail schreiben</span><b>meli_m_3112@<wbr>icloud.com</b></a>
+        <a class="tile" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kirchplatz+4,+88348+Bad+Saulgau"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span class="tl">Route planen</span><b>Kirchplatz 4, Bad&nbsp;Saulgau</b></a>
         <a class="tile" target="_blank" rel="noopener" href="https://www.instagram.com/hairandbeauty_lounge_bymelanie/"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></svg></span><span class="tl">Folgt uns auf</span><b>Instagram</b></a>
       </div>
       <div class="mapwrap">
         <div class="map" id="map"><div class="mapconsent"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Kirchplatz 4, 88348 Bad Saulgau</b><p>Beim Laden der Karte werden Daten an&nbsp;Google&nbsp;übertragen.</p><div class="mapbtns"><button class="btn" type="button" id="mapload">Karte laden</button><a class="btn light" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kirchplatz+4,+88348+Bad+Saulgau" target="_blank" rel="noopener">Route in Google Maps <span class="arr" aria-hidden="true">↗</span></a></div></div></div>
         <div class="hourscard">
           <div class="kicker dark">Öffnungszeiten</div><div class="today" id="today"></div>
-          <div class="hours"><span>Mo, Di, Do, Fr</span><span>9:00–12:00&nbsp;Uhr<br>13:00–18:00&nbsp;Uhr</span><span>Mittwoch</span><span>9:00–12:00&nbsp;Uhr</span><span>1. Samstag im Monat</span><span>9:00–16:00&nbsp;Uhr</span><span>Weitere Samstage</span><span>9:00–13:00&nbsp;Uhr<br><small>Im Zwei-Wochen-Rhythmus</small></span><span>Sonntag</span><span>Geschlossen</span></div>
+          <div class="hours"><span>Mo, Di, Do, Fr</span><span>9:00–12:00&nbsp;Uhr<br>13:00–18:00&nbsp;Uhr</span><span>Mittwoch</span><span>9:00–12:00&nbsp;Uhr</span><span>1. Samstag im Monat</span><span>9:00–16:00&nbsp;Uhr</span><span>Weitere Samstage</span><span>9:00–13:00&nbsp;Uhr<br><small>Alle zwei Wochen</small></span><span>Sonntag</span><span>Geschlossen</span></div>
           <p class="paynote">Bei uns könnt ihr auch mit Karte zahlen.</p>
           <button class="btn gold" data-book style="margin-top:16px">Termin online buchen</button>
         </div>
@@ -1569,7 +1612,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
   <button class="lx" type="button" aria-label="Schließen">×</button>
   <div class="phead"><img src="team_sarah.webp?v=3" alt="Sarah" width="132" height="132" loading="lazy"><div><h2 id="ps-h" class="serif">Sarah</h2><p class="prole">Friseurin</p><p class="pdays">Montags und freitags&nbsp;vormittags</p></div></div>
   <p class="pquote">Seit 12 Jahren ist Sarah mit Leidenschaft und Herz Friseurin. Seit Juni gehört sie zu unserem Team und freut sich darauf, euch mit ihren Schnitten, Farben und Stylings zu begeistern.</p>
-  <div class="kicker dark">Mit viel Gefühl für Schnitt und Farbe</div>
+  <div class="kicker dark">Mit viel Gefühl für Schnitt und&nbsp;Farbe</div>
   <ul class="plist"><li><svg class="pic" aria-hidden="true"><use href="#i-damen"/></svg><b>Damen</b><span>Individuelle Schnitte, stylische Farben und Strähnentechniken.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-herren"/></svg><b>Herren</b><span>Modische Schnitte und perfekte Styles.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-kinder"/></svg><b>Kinder</b><span>Liebevolle Haarschnitte für unsere Kleinen.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-farbe"/></svg><b>Farb- &amp; Strähnentechniken</b><span>Alle Techniken. Professionell, kreativ, mit Herz.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-ext"/></svg><b>Extensions</b><span>Haarverlängerung und Haarverdichtung mit Bonding-, Tape- und Nano-Ring-Extensions.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-hoch"/></svg><b>Hochsteckfrisuren &amp; Make-up</b><span>Für Hochzeiten, Feiern und besondere Anlässe.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-wax"/></svg><b>Ganzkörper-Waxing</b><span>Professionelle Haarentfernung für ein gepflegtes und glattes Hautgefühl.</span></li><li><svg class="pic" aria-hidden="true"><use href="#i-faden"/></svg><b>Augenbrauen mit Faden<em class="only">Nur bei Sarah</em></b><span>Zupfen in Fadentechnik.</span></li></ul>
   <button class="btn" type="button" data-bookwith="Sarah">Termin bei Sarah buchen</button>
 </dialog>
@@ -1582,7 +1625,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
   <p>Telefon: <a href="tel:+49758151698">07581&nbsp;51698</a> oder <a href="tel:+4975812007711">07581&nbsp;2007711</a><br>E-Mail: <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
   <p>Umsatzsteuer-Identifikationsnummer gemäß §&nbsp;27a&nbsp;UStG:<br>DE458983916</p>
   <p>Zuständige Kammer:<br>Handwerkskammer Reutlingen<br>Hindenburgstraße 58, 72762 Reutlingen</p>
-  <p>Berufsbezeichnung: Friseurmeisterin (verliehen in der Bundesrepublik Deutschland)<br>Berufsrechtliche Regelungen: Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener">www.gesetze-im-internet.de/hwo</a></p>
+  <p>Berufsbezeichnung: Friseurmeisterin (verliehen in der Bundesrepublik Deutschland)<br>Berufsrechtliche Regelungen: Handwerksordnung (HwO), einsehbar unter <a class="nw" href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener">www.gesetze-im-internet.de/hwo</a></p>
 </dialog>
 <dialog id="datenschutz" class="legal ds" aria-labelledby="dsh"><button class="lx" type="button" aria-label="Schließen">×</button>
   <h2 id="dsh" class="serif">Datenschutz</h2>
@@ -1593,7 +1636,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
   <p>Wir verarbeiten personenbezogene Daten nur, soweit das für den Betrieb dieser Website, für Ihre Anfragen und für Ihre Termine nötig ist. Rechtsgrundlagen sind Art.&nbsp;6 Abs.&nbsp;1 DSGVO: lit.&nbsp;a (Einwilligung), lit.&nbsp;b (Vertrag und Terminvereinbarung), lit.&nbsp;c (gesetzliche Pflichten) und lit.&nbsp;f (berechtigtes Interesse an einer sicheren und funktionierenden Website). Wir verkaufen keine Daten und nutzen keine Werbe- oder Analyse-Cookies.</p>
   <h3>3. Hosting und Server-Logfiles</h3>
   <p>Die Website wird bei <span class="todo">[Hosting-Anbieter wird ergänzt]</span> gehostet. Beim Aufruf werden technisch notwendige Daten verarbeitet: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser und Betriebssystem. Das dient der sicheren Bereitstellung der Seite (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO). Die Logfiles werden nach kurzer Zeit gelöscht.</p>
-  <h3>4. Kontakt per Telefon und E-Mail</h3>
+  <h3>4. Kontakt per Telefon und&nbsp;<span class="nw">E-Mail</span></h3>
   <p>Wenn Sie uns anrufen oder schreiben, verarbeiten wir Ihre Angaben, um Ihre Anfrage zu beantworten (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO). Die Daten löschen wir, wenn sie nicht mehr gebraucht werden und keine Aufbewahrungspflichten bestehen.</p>
   <h3>5. Online-Terminbuchung</h3>
   <p>Für Online-Termine nutzen wir das Buchungssystem Phorest (Phorest Salon Software, Irland). Dabei werden Name, Kontaktdaten, gewünschte Leistung und Termin verarbeitet. Phorest arbeitet in unserem Auftrag nach Art.&nbsp;28 DSGVO. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO.</p>
@@ -1606,7 +1649,7 @@ dialog.legal.ds .lx{position:sticky;top:0;float:right;margin:-20px -14px 0 0;bac
   <h3>9. Instagram</h3>
   <p>Wir verlinken auf unser Instagram-Profil. Es handelt sich um einen einfachen Link; beim Besuch dieser Website werden keine Daten an Instagram übertragen. Erst wenn Sie den Link öffnen, gelten die Datenschutzhinweise von Instagram (Meta Platforms Ireland Ltd.).</p>
   <h3>10. Google-Bewertungen</h3>
-  <p>Wir zeigen eine Auswahl öffentlicher Google-Bewertungen mit dem dort angezeigten Namen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO). Wer nicht genannt werden möchte, schreibt uns eine <span class="nw">E-Mail</span> – wir entfernen den Eintrag.</p>
+  <p>Wir zeigen eine Auswahl öffentlicher Google-Bewertungen mit den dort angezeigten Namen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO). Wer hier nicht genannt werden möchte, schreibt uns eine <span class="nw">E-Mail</span> – dann nehmen wir die Bewertung von unserer Website.</p>
   <h3>11. Ihre Rechte</h3>
   <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten, auf Datenübertragbarkeit sowie auf Widerspruch (Art.&nbsp;15–21 DSGVO). Eine Einwilligung können Sie jederzeit für die Zukunft widerrufen. Schreiben Sie uns dazu einfach eine <span class="nw">E-Mail</span>.</p>
   <p>Sie können sich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren. Für uns zuständig ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße&nbsp;20, 70173 Stuttgart.</p>
@@ -1634,18 +1677,18 @@ const S = {
   "Damen":[["Haarschnitt ohne Styling · Kurzes Haar",37.5,"",30],["Haarschnitt ohne Styling · Mittellanges Haar",47.5,"",45],["Haarschnitt ohne Styling · Langes Haar",52.5,"",45],["Waschen, Schneiden, Föhnen · Kurzes Haar",48.5,"",45],["Waschen, Schneiden, Föhnen · Mittellanges Haar",57.5,"Inklusive Styling",60],["Waschen, Schneiden, Föhnen · Langes Haar",62.5,"Inklusive Styling",60],["Schnellpflege",3.5,"Pflege-Extra",5],["Haarkur",8.5,"Pflege-Extra",10]],
   "Herren":[["Waschen, Schneiden, Föhnen",31.5,"",30],["Anfeuchten, Schneiden",27.5,"",30],["Maschinenhaarschnitt",19.5,"",20],["Kranzschnitt",15.5,"",20],["Bartkürzen",9.5,"Kürzen und in Form bringen",15]],
   "Kinder":[["Bis 6 Jahre",13.5,"",20],["7–14 Jahre",24.5,"",30],["7–14 Jahre · Inklusive Haarwäsche",28.5,"",30],["Mädchen · Langes Haar · Waschen, Schneiden, Föhnen",40.5,"",45]],
-  "Farbe":[["Ansatzfarbe",39.5,"",60],["Glossing",45.5,"",45],["Nachfärben · Kurzes Haar",39.5,"",60],["Nachfärben · Mittellanges Haar",53.5,"",75],["Nachfärben · Langes Haar",64.5,"",90],["Strähnen · Halber Kopf · Kurzes Haar",99.5,"",90],["Strähnen · Halber Kopf · Mittellanges Haar",119.5,"",105],["Strähnen · Halber Kopf · Langes Haar",129.5,"",120],["Strähnen · Ganzer Kopf · Kurzes Haar",119.5,"",120],["Strähnen · Ganzer Kopf · Mittellanges Haar",129.5,"",135],["Strähnen · Ganzer Kopf · Langes Haar",149.5,"",150]],
+  "Farbe":[["Ansatzfarbe",39.5,"",60],["Glossing",45.5,"",45],["Nachfärben · Kurzes Haar",39.5,"",60],["Nachfärben · Mittellanges Haar",53.5,"",75],["Nachfärben · Langes Haar",64.5,"",90],["Strähnen · Halber Kopf · Kurzes Haar",99.5,"",90],["Strähnen · Halber Kopf · Mittellanges Haar",119.5,"",105],["Strähnen · Halber Kopf · Langes Haar",129.5,"",120],["Strähnen · Ganzer Kopf · Kurzes Haar",119.5,"",120],["Strähnen · Ganzer Kopf · Mittellanges Haar",129.5,"",135],["Strähnen · Ganzer Kopf · Langes Haar",149.5,"",150],["Balayage",99.5,"Preis wie Strähnen, je\u00A0nach\u00A0Länge",120]],
   "Styling":[["Nur Glätten",18.5,"",20],["Waschen, Föhnen & Glätten",36.5,"",40],["Waschen, Föhnen & Beachwaves",37.5,"",45],["Waschen, Föhnen/Legen · Kurzes Haar",34.5,"",30],["Waschen, Föhnen/Legen · Mittellanges Haar",39.5,"",40],["Waschen, Föhnen/Legen · Langes Haar",42.5,"",45],["Hochsteckfrisur",85.5,"",60],["Teildauerwelle Oberkopf",45.5,"",75]],
   "Braut":[["Brautberatung",0,"",30],["Probefrisur",45,"",60],["Probe-Make-up",25,"",45],["Brautpaket",259.5,"",180]],
   "Keratin & Extensions":[["Keratin-Glättung Komplettpaket",239,"Cocochoco · Inklusive Pflege-Set und Styling · Haarschnitt separat",180],["Tape-Extensions · Hochsetzen",119,"Vorhandene Tapes neu einsetzen",90],["Eigene Extensions · Einarbeiten · 100 Stück",140,"",120],["Eigene Extensions · Einsetzen · ab\u00A0100 Stück",220,"",150],["Extensions · 100 Stück · bis 35\u00A0cm",599,"",180]],
   "Beauty":[["Augenbrauen-Zupfen",9.5,"",15],["Augenbrauen-Zupfen · Fadentechnik",9.5,"",15],["Augenbrauen-Färben",9.5,"",15],["Kombi-Angebot Augenbrauen",15.5,"",25],["Wimpern-Färben",9.5,"",15],["Gesichtsenthaarung Damen",15.5,"",20],["Gesichtsenthaarung · Fadentechnik",15.5,"",20],["Tages-Make-up",35,"",30],["Abend-Make-up",65,"",45],["Permanent-Make-up Augenbrauen · 1. Sitzung",350,"",120],["Permanent-Make-up Augenbrauen · 2. Sitzung",50,"",60],["Permanent-Make-up Lippen · 1. Sitzung",450,"",120],["Permanent-Make-up Lippen · 2. Sitzung",50,"",60],["Waxing · Achseln",25,"",15],["Waxing · Waden",45,"",30],["Waxing · Rücken",45,"",30],["Waxing · Brust",45,"",30],["Waxing · Ganzes Bein",65,"",45]],
   "Senioren":[["Seniorenangebot Damen",37.5,"Waschen, Schneiden, Föhnen",45],["Seniorenangebot Damen: Waschen, Föhnen/Legen · Kurzes Haar",19.5,"",30],["Seniorenangebot Damen: Waschen, Föhnen/Legen · Mittellanges Haar",23.5,"",30],["Seniorenangebot Damen: Waschen, Föhnen/Legen",27.5,"",30],["Seniorenangebot Herren",23.5,"Waschen, Schneiden, Föhnen",30],["Ansatzfarbe · Alles inklusive",77.5,"",90],["Dauerwelle · Alles inklusive",87,"",120]]
 };
-const NOTE={"Farbe":"Zu jeder Farbbehandlung gehören Waschen und Föhnen (ab\u00A034,50\u00A0€), bei Strähnen außerdem ein Glossing (45,50\u00A0€). Beides wird zusätzlich berechnet – bitte bucht es gleich mit."};
+const NOTE={"Farbe":"Zu jeder Farbbehandlung gehören Waschen und Föhnen (ab\u00A034,50\u00A0€), bei Strähnen außerdem ein Glossing (45,50\u00A0€). Beides wird zusätzlich berechnet\u00A0– bitte bucht es gleich mit. Im Strähnen\u2011Paket ist beides schon enthalten."};
 // Laut Salon: beide machen alles; Permanent-Make-up nur Melanie, Fadentechnik nur Sarah
 const ONLYM=new Set(S["Beauty"].filter(x=>x[0].startsWith("Permanent-Make-up")).map(x=>x[0])), ONLYS=new Set(S["Beauty"].filter(x=>x[0].includes("Fadentechnik")).map(x=>x[0]));
 const nm=n=>{const k=n.indexOf(" · ");return k<0?n:`${n.slice(0,k)}<span class="var">${n.slice(k+3).replace(/1\. /g,"1.\u00A0").replace(/2\. /g,"2.\u00A0")}</span>`};
-const abP = n => /^Keratin-Glättung/.test(n) ? "ab\u00A0" : "";
+const abP = n => /^(Keratin-Glättung|Balayage)/.test(n) ? "ab\u00A0" : "";
 const eur = v => v===0 ? "Kostenlos" : (Number.isInteger(v)?String(v):v.toLocaleString("de-DE",{minimumFractionDigits:2}))+"\u00A0€";
 const dur = m => m>=60 ? (m/60).toLocaleString("de-DE")+" Std." : m+" Min.";
 
@@ -1671,9 +1714,11 @@ function open(cat,svc){wantStaff=null;lastFocus=document.activeElement;st={step:
 let lockY=0;
 function lockScroll(){if(document.body.style.position==="fixed")return;lockY=scrollY;Object.assign(document.body.style,{position:"fixed",top:-lockY+"px",left:"0",right:"0",overflow:"hidden"})}
 function unlockScroll(){if(document.body.style.position!=="fixed")return;Object.assign(document.body.style,{position:"",top:"",left:"",right:"",overflow:""});scrollTo({top:lockY,behavior:"instant"})}
-function close(fromPop){if(!bk.classList.contains("open"))return;bk.classList.remove("open"); unlockScroll(); if(lastFocus)lastFocus.focus(); if(!fromPop&&history.state&&history.state.bk)history.back();}
+function close(fromPop){if(!bk.classList.contains("open"))return;bk.classList.remove("open"); unlockScroll(); if(lastFocus)lastFocus.focus(); if(!fromPop&&history.state&&history.state.bk){popSkip=true;history.back()}}
 let popSkip=false;
-addEventListener("popstate",()=>{if(popSkip){popSkip=false;return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();return}close(true)});
+// Fenster schließen: Seite bleibt, wo sie ist (springt nicht zum #Abschnitt aus der Adresse)
+const keepY=()=>{const y=scrollY;requestAnimationFrame(()=>{scrollTo(0,y);requestAnimationFrame(()=>scrollTo(0,y))})};
+addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(popSkip){popSkip=false;keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
 document.getElementById("close").onclick=()=>close();
 bk.addEventListener("click",e=>{if(e.target===bk)close()});
 document.addEventListener("keydown",e=>{if(!bk.classList.contains("open")||document.querySelector("dialog[open]"))return;if(e.key==="Escape")close();
@@ -1800,7 +1845,9 @@ function nextFree(c,svc,who){const keep=st;st={items:[{c,s:svc}],staff:who};let 
   st=keep;return r}
 function qbRender(){
   document.getElementById("qbc").innerHTML=QB.map((q,i)=>`<button class="${i===qi?"on":""}" data-q="${i}">${q[0]}</button>`).join("");
-  const [l,c,n,who]=QB[qi],svc=S[c].find(x=>x[0]===n),[d,tm]=nextFree(c,svc,who),nb=document.getElementById("qbn");
+  const [l,c,n,who]=QB[qi],svc=S[c].find(x=>x[0]===n),fr=nextFree(c,svc,who),nb=document.getElementById("qbn");
+  if(!fr&&c==="Angebote"){QB[qi]=l==="Herren"?["Herren","Herren","Waschen, Schneiden, Föhnen","Sarah"]:["Kinder","Kinder","7–14 Jahre","Sarah","Kinderschnitt 7–14 Jahre"];return qbRender()}
+  const [d,tm]=fr;
   nb.style.opacity=0;
   setTimeout(()=>{nb.innerHTML=`Nächster freier Termin<b>${d.toLocaleDateString("de-DE",{weekday:"long",day:"numeric",month:"long"})}, ${tm}&nbsp;Uhr</b>Bei ${who} · ${(QB[qi][4]||svc[0].replace(" · Mittellanges Haar",""))}<span class="qbp">${eur(svc[1])}</span>`;nb.style.opacity=1},150);
   document.querySelectorAll("#qbc button").forEach(b=>b.onclick=()=>{qi=+b.dataset.q;qbRender()});
@@ -1813,20 +1860,23 @@ const stk=document.querySelector(".sticky");{const qg=document.getElementById("q
 /* Karte erst nach Klick, Status heute */
 (()=>{const n=new Date(),m=n.getHours()*60+n.getMinutes(),iv=hoursOf(n),el=document.getElementById("today");
  const f=x=>String(x/60|0)+":"+String(x%60).padStart(2,"0");
- const nextOpen=()=>{for(let k=1;k<8;k++){const t=new Date(n);t.setDate(n.getDate()+k);const h=hoursOf(t);if(!h.length&&t.getDay()===6&&!feiertag(t))return " · Samstags im Zwei-Wochen-Rhythmus 9–13\u00A0Uhr";if(h.length)return " · "+(k===1?"morgen":t.toLocaleDateString("de-DE",{weekday:"long"}))+" ab "+f(h[0][0])+"\u00A0Uhr"}return ""};
+ const nextOpen=()=>{for(let k=1;k<8;k++){const t=new Date(n);t.setDate(n.getDate()+k);const h=hoursOf(t);if(!h.length&&t.getDay()===6&&!feiertag(t))return " · samstags im Zwei\u2011Wochen\u2011Rhythmus 9\u2060–\u206013\u00A0Uhr";if(h.length)return " · "+(k===1?"morgen":t.toLocaleDateString("de-DE",{weekday:"long"}))+"\u00A0ab\u00A0"+f(h[0][0])+"\u00A0Uhr"}return ""};
  const cur=iv.find(([o,c])=>m>=o&&m<c),later=iv.find(([o])=>m<o);
  if(feiertag(n)){el.classList.add("closed");el.innerHTML=`<i></i>Heute Feiertag · geschlossen${nextOpen()}`}
- else if(cur){el.innerHTML=`<i></i>Heute geöffnet bis ${f(cur[1])}&nbsp;Uhr`}
- else if(n.getDay()===6&&!iv.length&&m<780){el.innerHTML=`<i></i>Samstags im Zwei-Wochen-Rhythmus 9–13&nbsp;Uhr · ruft kurz an`}
- else{el.classList.add("closed");el.innerHTML=`<i></i>${later?(iv[0][0]<m?"Mittagspause · wieder geöffnet ab ":"Öffnet heute um ")+f(later[0])+"&nbsp;Uhr":(iv.length||n.getDay()===6?"Jetzt geschlossen":"Heute geschlossen")+nextOpen()}`}
+ else if(cur){el.innerHTML=`<i></i>Heute geöffnet bis&nbsp;${f(cur[1])}&nbsp;Uhr`}
+ else if(n.getDay()===6&&!iv.length&&m<780){if(m<540)el.classList.add("closed");el.innerHTML=`<i></i>Samstags im Zwei&#8209;Wochen&#8209;Rhythmus 9&#8288;–&#8288;13&nbsp;Uhr&nbsp;· ruft kurz an`}
+ else{el.classList.add("closed");el.innerHTML=`<i></i>${later?(iv[0][0]<m?"Mittagspause · wieder geöffnet ab\u00A0":"Öffnet heute um\u00A0")+f(later[0])+"&nbsp;Uhr":(iv.length||n.getDay()===6?"Jetzt geschlossen":"Heute geschlossen")+nextOpen()}`}
  const h=document.getElementById("htoday");if(h)h.textContent=el.classList.contains("closed")?"Online buchbar rund um die Uhr"+(el.textContent.includes("·")?" ·"+el.textContent.split("·").pop():""):el.textContent})();
 if(location.hash==="#buchen"){history.replaceState(null,"",location.pathname);const b=document.querySelector(".sticky [data-book]");if(b)setTimeout(()=>b.click(),300)}
 /* KI-Kennzeichnung im Hero: unten rechts im ersten Bildschirm (Julia 30.10) */
 (()=>{const h=document.querySelector(".hero"),k=h&&h.querySelector(".kih"),q=document.getElementById("qb");if(!k)return;
- const place=()=>{const top=h.getBoundingClientRect().top+scrollY,c=[h.offsetHeight,innerHeight-top];
-  if(q&&innerWidth<=900){const r=q.getBoundingClientRect().top+scrollY-top;if(r>0)c.push(r)}
-  k.style.bottom="auto";k.style.top=Math.max(8,Math.min(...c)-8-k.offsetHeight)+"px"};
- place();addEventListener("resize",place);addEventListener("load",place)})();
+ const place=()=>{const hr=h.getBoundingClientRect(),top=hr.top+scrollY,bh=k.offsetHeight,bw=k.offsetWidth;
+  let y=Math.min(h.offsetHeight,innerHeight-top)-8-bh;
+  if(q){const qr=q.getBoundingClientRect(),qt=qr.top+scrollY-top,qb=qr.bottom+scrollY-top;
+   if(qr.right>hr.right-12-bw&&y+bh>qt-4&&y<qb+4)y=qt-8-bh}
+  k.style.bottom="auto";k.style.top=Math.max(8,y)+"px"};
+ place();addEventListener("resize",place);addEventListener("load",place);setTimeout(place,1000);setTimeout(place,2000);
+ if(q){q.addEventListener("transitionend",place);if(window.ResizeObserver)new ResizeObserver(place).observe(q)}})();
 /* Team-Profile */
 const outside=(d,e)=>{const r=d.getBoundingClientRect();return e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)};
 document.querySelectorAll("dialog.prof,dialog.legal").forEach(d=>{d.addEventListener("close",()=>document.documentElement.style.overflow="")});
@@ -1856,7 +1906,7 @@ const SV={
  keratin:{t:"Keratin-Glättung",img:"extensions",v:9,pos:"center 12%",cat:"Keratin & Extensions",svc:"Keratin-Glättung Komplettpaket",i:"Seidig glattes, glänzendes Haar mit der Keratin-Glättung von Cocochoco. Den genauen Preis seht ihr bei der Online-Buchung, oder wir besprechen ihn in der Beratung.",g:[["","Keratin & Extensions",n=>/^Keratin/.test(n)]]},
  ext:{t:"Extensions",img:"svc_ext",v:9,cat:"Keratin & Extensions",ab:0,x:[["Verdichtung · alle Methoden","ab&nbsp;199&nbsp;€"]],i:"Mehr Länge und Fülle mit Tape-, Bonding- und Nano-Ring-Extensions. Tape-Extensions kommen von FLAUNT by Paul Mitchell, Bonding und Nano-Ringe von Longtime Hair. Der Preis hängt von Länge und Menge ab. Deshalb starten neue Extensions in der Regel mit einem Beratungstermin: Erst danach bestellen wir eure Haare.",g:[["","Keratin & Extensions",n=>!/^Keratin/.test(n)]]},
  brauen:{t:"Brauen, Wimpern & Make-up",img:"svc_makeup",v:7,cat:"Beauty",i:"Brauen zupfen, auch in Fadentechnik, Brauen und Wimpern färben. Make-up für den Tag und für den Abend.",g:[["Brauen & Wimpern","Beauty",n=>/^(Augenbrauen|Wimpern|Kombi)/.test(n)],["Gesicht","Beauty",n=>/^Gesicht/.test(n)],["Make-up","Beauty",n=>/Make-up$/.test(n)&&!/Permanent/.test(n)]]},
- makeup:{t:"Permanent-Make-up",img:"svc_pmu",v:1,cat:"Beauty",i:"Augenbrauen und Lippen, die lange schön bleiben. Jede Behandlung hat zwei Sitzungen.",g:[["Augenbrauen","Beauty",n=>/^Permanent-Make-up Augenbrauen/.test(n)],["Lippen","Beauty",n=>/^Permanent-Make-up Lippen/.test(n)]]},
+ makeup:{t:"Permanent-Make-up",img:"svc_pmu",v:2,cat:"Beauty",i:"Augenbrauen und Lippen, die lange schön bleiben. Jede Behandlung hat zwei Sitzungen.",g:[["Augenbrauen","Beauty",n=>/^Permanent-Make-up Augenbrauen/.test(n)],["Lippen","Beauty",n=>/^Permanent-Make-up Lippen/.test(n)]]},
  wax:{t:"Waxing",img:"svc_waxing_B",v:4,cat:"Beauty",i:"Professionelle Haarentfernung für ein gepflegtes und glattes Hautgefühl. Auch Ganzkörper-Waxing ist möglich – sprecht uns einfach an.",g:[["","Beauty",n=>/^Waxing/.test(n)]]},
  senioren:{t:"Für Seniorinnen & Senioren",img:"senior",v:4,cat:"Senioren",i:"Für alle ab 65 Jahren. Wir nehmen uns Zeit für Sie. Ihr Preis bleibt gleich, auch wenn unsere Preise steigen.",g:[["","Senioren"]]}
 };
@@ -1865,6 +1915,7 @@ function openSvc(k){const d=SV[k];if(!d)return;
  svin.innerHTML=`<div class="sphd" style="background-image:url(m_${d.img}.webp?v=${d.v||1})${d.pos?`;background-position:${d.pos}`:""}"><span class="kib">KI</span></div><h2 id="svcp-h" class="serif">${d.t}</h2><p class="pquote">${d.i}</p>`+
  d.g.map(([g,c,f,hot])=>{const rows=S[c].filter(([n])=>!f||f(n));if(!rows.length)return"";return (g?`<div class="kicker dark sg${hot?" hot":""}">${g}</div>`:"")+`<div class="slist${hot?" hot":""}">`+(d.x&&!hot?d.x.map(([a,b])=>`<div class="srow sx"><span class="n">${nm(a)}</span><span class="p">${b}</span></div>`).join(""):"")+rows.map(([n,p,i])=>`<button type="button" class="srow" data-book data-cat="${c}" data-svc="${n}"><span class="n">${nm(n)}${i&&i!=="Pflege-Extra"?`<small>${i}</small>`:""}</span><span class="p">${d.ab?"ab\u00A0":abP(n)}${eur(p)}</span></button>`).join("")+`</div>`+(c===d.cat&&NOTE[c]&&!hot?`<p class="pnote">Hinweis: ${NOTE[c]}</p>`:"")}).join("")+
  `<p class="pmwst">Alle Preise inkl. MwSt.</p><button class="btn wide" type="button" data-book data-cat="${d.cat}"${d.svc?` data-svc="${d.svc}"`:""}>Termin buchen</button><p class="qbcall">Online nichts Passendes gefunden?<br>${k==="senioren"?`<a href="tel:+49758151698">Rufen Sie uns an</a>`:`<a href="tel:+49758151698">Ruft uns an</a>`} – telefonisch klappt es fast immer.</p>`;
+ const hl=[...svin.querySelectorAll(".slist")].find(l=>/(Kurzes|Mittellanges|Langes)\s+Haar/.test(l.textContent));if(hl)hl.insertAdjacentHTML("afterend",`<p class="pnote">Haarlänge: <span class="nw">kurz – bis zum Ohrläppchen</span>, <span class="nw">mittellang – bis zur Schulter</span>, <span class="nw">lang – ab der Schulter</span>.</p>`);
  showDlg(svd);svd.scrollTop=0}
 document.querySelectorAll("[data-open]").forEach(b=>b.addEventListener("click",()=>openSvc(b.dataset.open)));
 svd.querySelector(".lx").onclick=()=>svd.close();
