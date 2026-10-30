@@ -1263,11 +1263,18 @@ dialog.prof .lx{position:fixed;z-index:5;background:rgba(255,255,255,.92);border
 .legalpage a{color:var(--ink)}
 .legalpage .todo{background:#f1f3f5;border-radius:4px;padding:0 4px;color:#5f676f}
 footer{padding-bottom:40px!important}
+
+/* Alle Knöpfe einheitlich: Hover grau-weiß statt rosa (Julia 30.10) */
+.btn:hover,.btn.gold:hover,.btn.light:hover,.btn.small:hover,.voucher #gbuy:hover,.qblink:hover{background:linear-gradient(180deg,#ffffff,#e6ecf1)!important;border-color:#8a96a2!important;color:var(--ink)!important;box-shadow:0 12px 24px -14px rgba(40,55,70,.45)!important}
+.btn.light:hover{border:1px solid #8a96a2!important}
+</style>
+<style>/* Runde 4: Fußzeile bis unten */
+body{display:flex;flex-direction:column;min-height:100vh}
+body>main{flex:1 0 auto}
 </style>
 </head>
 <body>
 
-<div class="demo">Entwurf · Gestaltungsvorschlag<span class="long"> für Hair &amp; Beauty Lounge. Keine echte Buchung, Bilder beispielhaft</span>.</div>
 
 <header>
   <div class="wrap nav">
@@ -1275,12 +1282,11 @@ footer{padding-bottom:40px!important}
     <ul>
       <li><a href="index.html#leistungen">Leistungen</a></li>
       <li><a href="index.html#team">Über uns</a></li>
-      <li><a href="index.html#galerie">Galerie</a></li>
       <li><a href="index.html#gutschein">Geschenkkarten</a></li>
       <li><a href="index.html#kontakt">Kontakt</a></li>
     </ul>
     <a class="hphone" href="tel:+49758151698" aria-label="Anrufen: 07581 51698"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>07581&nbsp;51698</span></a>
-    <a class="btn small" href="index.html">Termin buchen</a>
+    <a class="btn small" href="index.html#buchen">Termin buchen</a>
   </div>
 </header>
 
@@ -1292,6 +1298,8 @@ footer{padding-bottom:40px!important}
   <p>Kirchplatz 4<br>88348 Bad Saulgau</p>
   <p>Telefon: <a href="tel:+49758151698">07581&nbsp;51698</a> oder <a href="tel:+4975812007711">07581&nbsp;2007711</a><br>E-Mail: <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
   <p>Umsatzsteuer-Identifikationsnummer gemäß §&nbsp;27a&nbsp;UStG:<br>DE458983916</p>
+  <p>Zuständige Kammer:<br>Handwerkskammer Reutlingen<br>Hindenburgstraße 58, 72762 Reutlingen</p>
+  <p>Berufsbezeichnung: Friseurmeisterin (verliehen in der Bundesrepublik Deutschland)<br>Berufsrechtliche Regelungen: Handwerksordnung (HwO), einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener">www.gesetze-im-internet.de/hwo</a></p>
 </div></main>
 <footer>© Hair &amp; Beauty Lounge&nbsp;· Kirchplatz 4&nbsp;· Bad Saulgau<span class="fsep">&nbsp;· </span><a href="https://www.instagram.com/hairandbeauty_lounge_bymelanie/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a><br>Entwurf, kein offizieller Auftritt.</footer>
 </body>

@@ -1263,11 +1263,18 @@ dialog.prof .lx{position:fixed;z-index:5;background:rgba(255,255,255,.92);border
 .legalpage a{color:var(--ink)}
 .legalpage .todo{background:#f1f3f5;border-radius:4px;padding:0 4px;color:#5f676f}
 footer{padding-bottom:40px!important}
+
+/* Alle Knöpfe einheitlich: Hover grau-weiß statt rosa (Julia 30.10) */
+.btn:hover,.btn.gold:hover,.btn.light:hover,.btn.small:hover,.voucher #gbuy:hover,.qblink:hover{background:linear-gradient(180deg,#ffffff,#e6ecf1)!important;border-color:#8a96a2!important;color:var(--ink)!important;box-shadow:0 12px 24px -14px rgba(40,55,70,.45)!important}
+.btn.light:hover{border:1px solid #8a96a2!important}
+</style>
+<style>/* Runde 4: Fußzeile bis unten */
+body{display:flex;flex-direction:column;min-height:100vh}
+body>main{flex:1 0 auto}
 </style>
 </head>
 <body>
 
-<div class="demo">Entwurf · Gestaltungsvorschlag<span class="long"> für Hair &amp; Beauty Lounge. Keine echte Buchung, Bilder beispielhaft</span>.</div>
 
 <header>
   <div class="wrap nav">
@@ -1275,12 +1282,11 @@ footer{padding-bottom:40px!important}
     <ul>
       <li><a href="index.html#leistungen">Leistungen</a></li>
       <li><a href="index.html#team">Über uns</a></li>
-      <li><a href="index.html#galerie">Galerie</a></li>
       <li><a href="index.html#gutschein">Geschenkkarten</a></li>
       <li><a href="index.html#kontakt">Kontakt</a></li>
     </ul>
     <a class="hphone" href="tel:+49758151698" aria-label="Anrufen: 07581 51698"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>07581&nbsp;51698</span></a>
-    <a class="btn small" href="index.html">Termin buchen</a>
+    <a class="btn small" href="index.html#buchen">Termin buchen</a>
   </div>
 </header>
 
@@ -1289,7 +1295,7 @@ footer{padding-bottom:40px!important}
 <h1 class="serif">Datenschutz</h1>
   <p class="lsub">Stand: Oktober 2026</p>
   <h3>1. Verantwortliche</h3>
-  <p>Hair &amp; Beauty Lounge, Inhaberin Melanie Maurus<br>Kirchplatz 4, 88348 Bad Saulgau<br>Telefon: 07581&nbsp;51698 oder 07581&nbsp;2007711 · E-Mail: <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
+  <p>Hair &amp; Beauty Lounge, Inhaberin Melanie Maurus<br>Kirchplatz 4, 88348 Bad Saulgau<br>Telefon: 07581&nbsp;51698 oder 07581&nbsp;2007711 · <span class="nw">E-Mail:</span> <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
   <h3>2. Allgemeines</h3>
   <p>Wir verarbeiten personenbezogene Daten nur, soweit das für den Betrieb dieser Website, für Ihre Anfragen und für Ihre Termine nötig ist. Rechtsgrundlagen sind Art.&nbsp;6 Abs.&nbsp;1 DSGVO: lit.&nbsp;a (Einwilligung), lit.&nbsp;b (Vertrag und Terminvereinbarung), lit.&nbsp;c (gesetzliche Pflichten) und lit.&nbsp;f (berechtigtes Interesse an einer sicheren und funktionierenden Website). Wir verkaufen keine Daten und nutzen keine Werbe- oder Analyse-Cookies.</p>
   <h3>3. Hosting und Server-Logfiles</h3>
@@ -1306,7 +1312,9 @@ footer{padding-bottom:40px!important}
   <p>Die Schriftarten sind direkt auf dieser Website gespeichert. Beim Laden der Seite wird keine Verbindung zu Google oder anderen Schriftanbietern aufgebaut.</p>
   <h3>9. Instagram</h3>
   <p>Wir verlinken auf unser Instagram-Profil. Es handelt sich um einen einfachen Link; beim Besuch dieser Website werden keine Daten an Instagram übertragen. Erst wenn Sie den Link öffnen, gelten die Datenschutzhinweise von Instagram (Meta Platforms Ireland Ltd.).</p>
-  <h3>10. Ihre Rechte</h3>
+  <h3>10. Google-Bewertungen</h3>
+  <p>Wir zeigen eine Auswahl öffentlicher Google-Bewertungen mit dem dort angezeigten Namen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO). Wer nicht genannt werden möchte, schreibt uns eine <span class="nw">E-Mail</span> – wir entfernen den Eintrag.</p>
+  <h3>11. Ihre Rechte</h3>
   <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten, auf Datenübertragbarkeit sowie auf Widerspruch (Art.&nbsp;15–21 DSGVO). Eine Einwilligung können Sie jederzeit für die Zukunft widerrufen. Schreiben Sie uns dazu einfach eine <span class="nw">E-Mail</span>.</p>
   <p>Sie können sich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren. Für uns zuständig ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße&nbsp;20, 70173 Stuttgart.</p>
 </div></main>
