@@ -1362,6 +1362,8 @@ html{scrollbar-gutter:stable}
 .hshort .go,.allp,.tl2{position:relative}
 .hshort .go::after,.allp::after,.tl2::after{content:"";position:absolute;left:-6px;right:-6px;top:-10px;bottom:-10px}
 .brands li span{font-size:12px}
+.burger{flex-shrink:0}
+@media (max-width:340px){.nav .hphone span{display:none!important}}
 @media (max-width:359px){.hours>span:nth-child(odd){white-space:normal!important}}
 @media (max-width:339px){.spt span{white-space:normal}}
 @media (max-width:400px){#senioren .stx .kicker{font-size:min(13px,3.25vw);letter-spacing:.1em}}
@@ -1726,7 +1728,7 @@ function close(fromPop){if(!bk.classList.contains("open"))return;bk.classList.re
 let popSkip=false;
 // Fenster schließen: Seite bleibt, wo sie ist (springt nicht zum #Abschnitt aus der Adresse)
 const keepY=()=>{const y=scrollY;requestAnimationFrame(()=>{scrollTo(0,y);requestAnimationFrame(()=>scrollTo(0,y))})};
-addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(popSkip){popSkip=false;if(window._afterPop){const f=window._afterPop;window._afterPop=null;setTimeout(f,30);return}if(window._goHash){const h=window._goHash;window._goHash=null;history.pushState(null,"",h);const el=document.querySelector(h);if(el)setTimeout(()=>el.scrollIntoView(),30);return}keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
+addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(history.state&&history.state.bk&&!bk.classList.contains("open")){const y=lockY;history.replaceState(null,"");requestAnimationFrame(()=>scrollTo(0,y));return}if(popSkip){popSkip=false;if(window._afterPop){const f=window._afterPop;window._afterPop=null;setTimeout(f,30);return}if(window._goHash){const h=window._goHash;window._goHash=null;history.pushState(null,"",h);const el=document.querySelector(h);if(el)setTimeout(()=>el.scrollIntoView(),30);return}keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
 document.getElementById("close").onclick=()=>close();
 bk.addEventListener("click",e=>{if(e.target===bk)close()});
 document.addEventListener("keydown",e=>{if(!bk.classList.contains("open")||document.querySelector("dialog[open]"))return;if(e.key==="Escape")close();
