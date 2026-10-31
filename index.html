@@ -1726,7 +1726,7 @@ function close(fromPop){if(!bk.classList.contains("open"))return;bk.classList.re
 let popSkip=false;
 // Fenster schließen: Seite bleibt, wo sie ist (springt nicht zum #Abschnitt aus der Adresse)
 const keepY=()=>{const y=scrollY;requestAnimationFrame(()=>{scrollTo(0,y);requestAnimationFrame(()=>scrollTo(0,y))})};
-addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(popSkip){popSkip=false;if(window._goHash){const h=window._goHash;window._goHash=null;history.pushState(null,"",h);const el=document.querySelector(h);if(el)el.scrollIntoView();return}keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
+addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(popSkip){popSkip=false;if(window._afterPop){const f=window._afterPop;window._afterPop=null;setTimeout(f,30);return}if(window._goHash){const h=window._goHash;window._goHash=null;history.pushState(null,"",h);const el=document.querySelector(h);if(el)setTimeout(()=>el.scrollIntoView(),30);return}keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
 document.getElementById("close").onclick=()=>close();
 bk.addEventListener("click",e=>{if(e.target===bk)close()});
 document.addEventListener("keydown",e=>{if(!bk.classList.contains("open")||document.querySelector("dialog[open]"))return;if(e.key==="Escape")close();
@@ -1875,7 +1875,7 @@ const stk=document.querySelector(".sticky");{const qg=document.getElementById("q
  else if(n.getDay()===6&&!iv.length&&m<780){if(m<540)el.classList.add("closed");el.innerHTML=`<i></i>Samstags im Zwei&#8209;Wochen&#8209;Rhythmus 9&#8288;–&#8288;13&nbsp;Uhr&nbsp;· ruft kurz an`}
  else{el.classList.add("closed");el.innerHTML=`<i></i>${later?(iv[0][0]<m?"Mittagspause · wieder geöffnet ab\u00A0":"Öffnet heute um\u00A0")+f(later[0])+"&nbsp;Uhr":(iv.length||n.getDay()===6?"Jetzt geschlossen":"Heute geschlossen")+nextOpen()}`}
  const h=document.getElementById("htoday");if(h)h.textContent=el.classList.contains("closed")?"Online buchbar rund um die Uhr"+(el.textContent.includes("·")?" ·"+el.textContent.split("·").pop():""):el.textContent})();
-if(location.hash==="#buchen"){history.replaceState(null,"",location.pathname);const b=document.querySelector(".sticky [data-book]");if(b)setTimeout(()=>b.click(),300)}
+if(location.hash==="#buchen"){history.replaceState(null,"",location.pathname+location.search);const b=document.querySelector(".sticky [data-book]");if(b)setTimeout(()=>b.click(),300)}
 /* KI-Kennzeichnung im Hero: unten rechts im ersten Bildschirm (Julia 30.10) */
 (()=>{const h=document.querySelector(".hero"),k=h&&h.querySelector(".kih"),q=document.getElementById("qb");if(!k)return;
  const place=()=>{const hr=h.getBoundingClientRect(),top=hr.top+scrollY,bh=k.offsetHeight,bw=k.offsetWidth;
@@ -1907,8 +1907,11 @@ const menu=o=>{hdr.classList.toggle("mo",o);document.body.classList.toggle("menu
 const menuOpen=()=>{menu(true);if(!(history.state&&history.state.mo))history.pushState({mo:1},"")};
 const menuClose=()=>{menu(false);if(history.state&&history.state.mo){popSkip=true;history.back()}};
 bg.onclick=()=>{const o=!hdr.classList.contains("mo");o?menuOpen():menuClose();if(o){const a=hdr.querySelector(".nav ul a");if(a)a.focus()}};
-hdr.querySelectorAll(".nav ul a").forEach(a=>a.addEventListener("click",e=>{const h=a.getAttribute("href");if(!hdr.classList.contains("mo"))return;if(h&&h[0]==="#"&&history.state&&history.state.mo){e.preventDefault();window._goHash=h;menuClose()}else menu(false)}));
+hdr.querySelectorAll(".nav ul a, .nav .logo").forEach(a=>a.addEventListener("click",e=>{const h=a.getAttribute("href");if(!hdr.classList.contains("mo"))return;if(h&&h[0]==="#"&&history.state&&history.state.mo){e.preventDefault();window._goHash=h;menuClose()}else menu(false)}));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&hdr.classList.contains("mo"))menuClose()});
+addEventListener("resize",()=>{if(innerWidth>900&&hdr.classList.contains("mo"))menuClose()});
+// „Termin buchen“ bei offenem Menü: erst Menü schließen (ohne Verlaufsschritt), dann Buchung öffnen
+document.addEventListener("click",e=>{const b=e.target.closest("[data-book]");if(!b||!hdr.classList.contains("mo")||!(history.state&&history.state.mo))return;e.preventDefault();e.stopImmediatePropagation();window._afterPop=()=>b.click();menuClose()},true);
 document.addEventListener("click",e=>{if(hdr.classList.contains("mo")&&!hdr.contains(e.target))menuClose()});
 /* Leistungen: Karte öffnet Panel mit allen Preisen */
 const SV={
