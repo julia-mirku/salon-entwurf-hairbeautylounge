@@ -1338,7 +1338,7 @@ html{scrollbar-gutter:stable}
 /* Aktion-Plaketten nie über das KI-Zeichen (auch bei längerem Text, z. B. übersetzt) */
 .svc .deal{max-width:calc(100% - 52px);white-space:normal;overflow-wrap:anywhere}
 /* Megafon in der Aktionsleiste */
-.abar .mega{width:1.07em;height:.95em;vertical-align:-.12em;margin-right:.3em;transform-origin:30% 60%;animation:megaWackel 9s ease-in-out infinite}
+.abar .mega{width:1.07em;height:.95em;vertical-align:-.12em;margin-top:-.3em;margin-bottom:-.3em;margin-right:.3em;transform-origin:30% 60%;animation:megaWackel 9s ease-in-out infinite}
 .abar .mega .mw1,.abar .mega .mw2,.abar .mega .mw3{animation:megaWelle 9s ease-in-out infinite}
 .abar .mega .mw2{animation-delay:.15s}
 .abar .mega .mw3{animation-delay:.3s}
@@ -1346,7 +1346,7 @@ html{scrollbar-gutter:stable}
 @keyframes megaWelle{0%,80%,100%{opacity:1}85%{opacity:.25}91%{opacity:1}}
 @media (prefers-reduced-motion:reduce){.abar .mega,.abar .mega path{animation:none}}
 /* Blick über Megafon und Titel, von links nach rechts (nur auf Schrift und Symbol) */
-.abar .atx{background:linear-gradient(100deg,var(--gold-d) 36%,#e9c9cf 44%,#fff 50%,#e9c9cf 56%,var(--gold-d) 64%) 100% 0/300% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:aBlick 9s cubic-bezier(.45,0,.55,1) infinite}
+.abar .atx{padding-right:.2em;margin-right:-.2em;background:linear-gradient(100deg,var(--gold-d) 40%,#d9aab3 46%,#f6e4e7 50%,#d9aab3 54%,var(--gold-d) 60%) 100% 0/300% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:aBlick 9s cubic-bezier(.45,0,.55,1) infinite}
 @keyframes aBlick{0%,40%{background-position:100% 0}72%,100%{background-position:0 0}}
 @media (prefers-reduced-motion:reduce){.abar .atx{animation:none}}
 /* Tablet hochkant (701–900): ruhiger */
@@ -1362,7 +1362,8 @@ html{scrollbar-gutter:stable}
 .hshort .go,.allp,.tl2{position:relative}
 .hshort .go::after,.allp::after,.tl2::after{content:"";position:absolute;left:-6px;right:-6px;top:-10px;bottom:-10px}
 .brands li span{font-size:12px}
-@media (max-width:420px){#senioren .kicker .nw{font-size:min(13px,3.25vw);letter-spacing:.1em}}
+@media (max-width:359px){.hours span{white-space:normal!important;overflow-wrap:anywhere}}
+@media (max-width:400px){#senioren .stx .kicker{font-size:min(13px,3.25vw);letter-spacing:.1em}}
 @media (min-width:701px) and (max-width:800px){.brands li b{font-size:14px}}
 .tl2::after{top:-5px}
 </style>
@@ -1383,7 +1384,7 @@ html{scrollbar-gutter:stable}
 <body id="top">
 
 
-<a class="abar" href="#" data-book data-cat="Angebote" role="button" aria-haspopup="dialog"><b><svg class="mega" viewBox="0 0 27 24" aria-hidden="true" fill="none" stroke="url(#megaBlick)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="megaBlick" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="12" y2="0"><stop offset="0" stop-color="currentColor"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="currentColor"/><animateTransform attributeName="gradientTransform" type="translate" values="-12 0;-12 0;30 0;30 0" keyTimes="0;.36;.46;1" dur="9s" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1" repeatCount="indefinite"/></linearGradient></defs><path d="M3.5 10.2v3.6c0 .6.5 1.1 1.1 1.1h1.9l7 4.1V5L6.5 9.1H4.6c-.6 0-1.1.5-1.1 1.1z"/><path d="M7.2 15l1.4 4.3"/><path class="mw1" d="M16.6 9.6a3.4 3.4 0 0 1 0 4.8"/><path class="mw2" d="M19.2 7.2a7 7 0 0 1 0 9.6"/><path class="mw3" d="M21.8 4.6a10.6 10.6 0 0 1 0 14.8"/></svg><span class="atx">Jubiläums-Aktion im November</span></b><em>Ein Jahr Hair &amp; Beauty Lounge!</em><span class="al">Strähnen-Paket ab&nbsp;149&nbsp;€ · Herrenschnitt nach Wunsch&nbsp;25&nbsp;€ · Kinder ab&nbsp;10&nbsp;€</span><span class="as">Strähnen-Paket ab&nbsp;149&nbsp;€ · Kinder ab&nbsp;10&nbsp;€<br>Herrenschnitt nach Wunsch&nbsp;25&nbsp;€&nbsp;→</span><i>Jetzt buchen&nbsp;→</i></a>
+<a class="abar" href="#" data-book data-cat="Angebote" role="button" aria-haspopup="dialog"><b><svg class="mega" viewBox="0 0 27 24" aria-hidden="true" fill="none" stroke="url(#megaBlick)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="megaBlick" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="12" y2="0"><stop offset="0" stop-color="currentColor"/><stop offset=".5" stop-color="#f6e4e7"/><stop offset="1" stop-color="currentColor"/><animateTransform attributeName="gradientTransform" type="translate" values="-12 0;-12 0;30 0;30 0" keyTimes="0;.36;.46;1" dur="9s" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1" repeatCount="indefinite"/></linearGradient></defs><path d="M3.5 10.2v3.6c0 .6.5 1.1 1.1 1.1h1.9l7 4.1V5L6.5 9.1H4.6c-.6 0-1.1.5-1.1 1.1z"/><path d="M7.2 15l1.4 4.3"/><path class="mw1" d="M16.6 9.6a3.4 3.4 0 0 1 0 4.8"/><path class="mw2" d="M19.2 7.2a7 7 0 0 1 0 9.6"/><path class="mw3" d="M21.8 4.6a10.6 10.6 0 0 1 0 14.8"/></svg><span class="atx">Jubiläums-Aktion im November</span></b><em>Ein Jahr Hair &amp; Beauty Lounge!</em><span class="al">Strähnen-Paket ab&nbsp;149&nbsp;€ · Herrenschnitt nach Wunsch&nbsp;25&nbsp;€ · Kinder ab&nbsp;10&nbsp;€</span><span class="as">Strähnen-Paket ab&nbsp;149&nbsp;€ · Kinder ab&nbsp;10&nbsp;€<br>Herrenschnitt nach Wunsch&nbsp;25&nbsp;€&nbsp;→</span><i>Jetzt buchen&nbsp;→</i></a>
 <header>
   <div class="wrap nav">
     <a class="logo" href="#top" aria-label="Hair &amp; Beauty Lounge by Melanie Maurus"><span class="lt">Hair<i class="lgap"></i>&amp; Beauty</span><span class="ls">lounge</span><span class="lb">by Melanie Maurus</span></a>
@@ -1404,9 +1405,9 @@ html{scrollbar-gutter:stable}
     <div class="wrap hgrid">
       <div class="htx">
         <div class="kicker">Hair &amp; Beauty Lounge am Kirchplatz</div>
-        <div class="hinfo"><span>Kirchplatz 4, Bad Saulgau</span><span id="htoday"></span></div>
+        <div class="hinfo"><span>Kirchplatz 4, Bad&nbsp;Saulgau</span><span id="htoday"></span></div>
         <h1 class="hlogo" aria-label="Hair &amp; Beauty Lounge by Melanie Maurus, euer Friseur in Bad Saulgau"><span class="hl1">Hair<i class="lgap"></i>&amp; Beauty</span><span class="hl2">lounge</span><span class="hl3">by Melanie Maurus</span></h1>
-        <p class="hsub">Euer Friseur in Bad Saulgau</p>
+        <p class="hsub">Euer Friseur in Bad&nbsp;Saulgau</p>
         <a class="hpill" href="#kontakt"><i></i>Kirchplatz 4 · Mitten in der Altstadt</a>
         <p class="hshort"><a class="go" href="#preise" data-go="Damen">Damen</a> · <a class="go" href="#preise" data-go="Herren">Herren</a> · <a class="go" href="#preise" data-go="Kinder">Kinder</a> · <a class="go" href="#preise" data-go="Farbe">Farbe</a> · <a class="go" href="#preise" data-go="Braut">Braut</a></p>
         <p>Schnitt, Farbe, Brautstyling und Kosmetik unter einem Dach – mit ehrlicher Beratung und viel Liebe zum Detail.</p>
@@ -1453,8 +1454,8 @@ html{scrollbar-gutter:stable}
           <div class="sbtns"><button class="btn" data-book data-cat="Senioren">Termin buchen</button><a class="go allp" href="#preise" data-go="Senioren">Alle Preise →</a></div>
         </div>
         <div class="spairs">
-          <a class="spc" href="#" data-book data-cat="Senioren" data-svc="Seniorenangebot Damen"><span class="spi w" role="img" aria-label="Seniorin beim Föhnen im Salon"><span class="kib">KI</span></span><span class="spt"><span>Damenhaarschnitt</span><b class="serif">37,50&nbsp;€</b></span></a>
-          <a class="spc" href="#" data-book data-cat="Senioren" data-svc="Seniorenangebot Herren"><span class="spi m" role="img" aria-label="Senior beim Haarschnitt im Salon"><span class="kib">KI</span></span><span class="spt"><span>Herrenhaarschnitt</span><b class="serif">23,50&nbsp;€</b></span></a>
+          <a class="spc" href="#" data-book data-cat="Senioren" data-svc="Seniorenangebot Damen"><span class="spi w" role="img" aria-label="Seniorin beim Föhnen im Salon"><span class="kib">KI</span></span><span class="spt"><span>Damen&shy;haarschnitt</span><b class="serif">37,50&nbsp;€</b></span></a>
+          <a class="spc" href="#" data-book data-cat="Senioren" data-svc="Seniorenangebot Herren"><span class="spi m" role="img" aria-label="Senior beim Haarschnitt im Salon"><span class="kib">KI</span></span><span class="spt"><span>Herren&shy;haarschnitt</span><b class="serif">23,50&nbsp;€</b></span></a>
         </div>
       </div>
     </div>
@@ -1557,14 +1558,14 @@ html{scrollbar-gutter:stable}
           <h2>Geschenkkarten</h2>
           <p style="margin:12px 0 18px">Kauft eure Geschenkkarte online und verschenkt sie per E-Mail, zum Ausdrucken oder direkt aufs Handy. Geschenkkarten bekommt ihr außerdem bei uns im Salon.</p>
           <div class="amts" id="amts"><button class="amt on">50&nbsp;€</button><button class="amt">100&nbsp;€</button><button class="amt">150&nbsp;€</button><button class="amt">Wunschbetrag</button></div>
-          <p class="gbnote">Beim Online-Kauf kommen 5&nbsp;% dazu · <span id="gbonus">Wert 52,50&nbsp;€</span></p>
+          <p class="gbnote">Beim Online-Kauf kommen 5&nbsp;% dazu&nbsp;· <span id="gbonus">Wert 52,50&nbsp;€</span></p>
           <div class="wunsch" id="wunsch" hidden><label for="wbet">Euer Betrag</label><div class="wrow"><input id="wbet" type="number" min="10" max="1000" step="5" inputmode="numeric" placeholder="75"><span>€</span></div></div>
           <button class="btn gold" id="gbuy">Geschenkkarte kaufen</button>
           <p class="gdemo" id="gdemo" hidden>Demo: Im echten Shop geht es hier direkt zum Kauf der Geschenkkarte über Phorest.</p>
         </div>
         <div class="giftwrap"><div class="gift" id="gift"><div class="gfront">
           <div class="gl"><span class="logo glogo2" aria-label="Hair &amp; Beauty Lounge by Melanie Maurus"><span class="lt">Hair<i class="lgap"></i>&amp; Beauty</span><span class="ls">lounge</span><span class="lb">by Melanie Maurus</span></span><span class="gfor">Für: ________________</span></div>
-          <div class="gr"><div class="glabel">Geschenkkarte</div><div class="serif gval" id="gval">50&nbsp;€</div><span class="gtag">Bad Saulgau</span></div>
+          <div class="gr"><div class="glabel">Geschenkkarte</div><div class="serif gval" id="gval">50&nbsp;€</div><span class="gtag">Bad&nbsp;Saulgau</span></div>
           <div class="shine"></div></div>
         </div></div>
       </div>
@@ -1573,7 +1574,7 @@ html{scrollbar-gutter:stable}
 
   <section id="kontakt" style="padding-top:0">
     <div class="wrap">
-      <div class="head"><div class="kicker dark">So findet ihr uns</div><h2>Wir freuen uns auf euch</h2><p>Mitten in der Altstadt von Bad Saulgau. Gut erreichbar auch aus Herbertingen, Altshausen, Bad Buchau, Ostrach, Mengen und Umgebung. Im Salon gibt es außerdem einen Hermes PaketShop.</p></div>
+      <div class="head"><div class="kicker dark">So findet ihr uns</div><h2>Wir freuen uns auf euch</h2><p>Mitten in der Altstadt von Bad&nbsp;Saulgau. Gut erreichbar auch aus Herbertingen, Altshausen, Bad Buchau, Ostrach, Mengen und Umgebung. Im Salon gibt es außerdem einen Hermes PaketShop.</p></div>
       <div class="tiles">
         <div class="tile tcall"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="tl">Anrufen</span><a class="tnum" href="tel:+49758151698"><b>07581&nbsp;51698</b></a><a class="tl2" href="tel:+4975812007711">oder 07581&nbsp;2007711</a></div>
         <a class="tile" href="mailto:meli_m_3112@icloud.com"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><span class="tl">E-Mail schreiben</span><b>meli_m_3112@<wbr>icloud.com</b></a>
@@ -1581,7 +1582,7 @@ html{scrollbar-gutter:stable}
         <a class="tile" target="_blank" rel="noopener" href="https://www.instagram.com/hairandbeauty_lounge_bymelanie/"><span class="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></svg></span><span class="tl">Folgt uns auf</span><b>Instagram</b></a>
       </div>
       <div class="mapwrap">
-        <div class="map" id="map"><div class="mapconsent"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Kirchplatz 4, 88348 Bad Saulgau</b><p>Beim Laden der Karte werden Daten an&nbsp;Google&nbsp;übertragen.</p><div class="mapbtns"><button class="btn" type="button" id="mapload">Karte laden</button><a class="btn light" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kirchplatz+4,+88348+Bad+Saulgau" target="_blank" rel="noopener">Route in Google Maps <span class="arr" aria-hidden="true">↗</span></a></div></div></div>
+        <div class="map" id="map"><div class="mapconsent"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><b>Kirchplatz 4, 88348 Bad&nbsp;Saulgau</b><p>Beim Laden der Karte werden Daten an&nbsp;Google&nbsp;übertragen.</p><div class="mapbtns"><button class="btn" type="button" id="mapload">Karte laden</button><a class="btn light" href="https://www.google.com/maps/dir/?api=1&amp;destination=Kirchplatz+4,+88348+Bad+Saulgau" target="_blank" rel="noopener">Route in Google Maps <span class="arr" aria-hidden="true">↗</span></a></div></div></div>
         <div class="hourscard">
           <div class="kicker dark">Öffnungszeiten</div><div class="today" id="today"></div>
           <div class="hours"><span>Mo, Di, Do, Fr</span><span>9:00–12:00&nbsp;Uhr<br>13:00–18:00&nbsp;Uhr</span><span>Mittwoch</span><span>9:00–12:00&nbsp;Uhr</span><span>1. Samstag im Monat</span><span>9:00–16:00&nbsp;Uhr</span><span>Weitere Samstage</span><span>9:00–13:00&nbsp;Uhr<br><small>Alle zwei Wochen</small></span><span>Sonntag</span><span>Geschlossen</span></div>
@@ -1627,7 +1628,7 @@ html{scrollbar-gutter:stable}
   <h2 id="imph" class="serif">Impressum</h2>
   <p class="lsub">Angaben gemäß §&nbsp;5 DDG</p>
   <p><b>Hair &amp; Beauty Lounge</b><br>Inhaberin: Melanie Maurus<br>Einzelunternehmen</p>
-  <p>Kirchplatz 4<br>88348 Bad Saulgau</p>
+  <p>Kirchplatz 4<br>88348 Bad&nbsp;Saulgau</p>
   <p>Telefon: <a href="tel:+49758151698">07581&nbsp;51698</a> oder <a href="tel:+4975812007711">07581&nbsp;2007711</a><br>E-Mail: <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
   <p>Umsatzsteuer-Identifikationsnummer gemäß §&nbsp;27a&nbsp;UStG:<br>DE458983916</p>
   <p>Zuständige Kammer:<br>Handwerkskammer Reutlingen<br>Hindenburgstraße 58, 72762 Reutlingen</p>
@@ -1637,7 +1638,7 @@ html{scrollbar-gutter:stable}
   <h2 id="dsh" class="serif">Datenschutz</h2>
   <p class="lsub">Stand: Oktober 2026</p>
   <h3>1. Verantwortliche</h3>
-  <p>Hair &amp; Beauty Lounge, Inhaberin Melanie Maurus<br>Kirchplatz 4, 88348 Bad Saulgau<br>Telefon: 07581&nbsp;51698 oder 07581&nbsp;2007711 · <span class="nw">E-Mail:</span> <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
+  <p>Hair &amp; Beauty Lounge, Inhaberin Melanie Maurus<br>Kirchplatz 4, 88348 Bad&nbsp;Saulgau<br>Telefon: 07581&nbsp;51698 oder 07581&nbsp;2007711 · <span class="nw">E-Mail:</span> <a href="mailto:meli_m_3112@icloud.com">meli_m_3112@icloud.com</a></p>
   <h3>2. Allgemeines</h3>
   <p>Wir verarbeiten personenbezogene Daten nur, soweit das für den Betrieb dieser Website, für Ihre Anfragen und für Ihre Termine nötig ist. Rechtsgrundlagen sind Art.&nbsp;6 Abs.&nbsp;1 DSGVO: lit.&nbsp;a (Einwilligung), lit.&nbsp;b (Vertrag und Terminvereinbarung), lit.&nbsp;c (gesetzliche Pflichten) und lit.&nbsp;f (berechtigtes Interesse an einer sicheren und funktionierenden Website). Wir verkaufen keine Daten und nutzen keine Werbe- oder Analyse-Cookies.</p>
   <h3>3. Hosting und Server-Logfiles</h3>
@@ -1660,7 +1661,7 @@ html{scrollbar-gutter:stable}
   <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten, auf Datenübertragbarkeit sowie auf Widerspruch (Art.&nbsp;15–21 DSGVO). Eine Einwilligung können Sie jederzeit für die Zukunft widerrufen. Schreiben Sie uns dazu einfach eine <span class="nw">E-Mail</span>.</p>
   <p>Sie können sich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren. Für uns zuständig ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße&nbsp;20, 70173 Stuttgart.</p>
 </dialog>
-<footer>© Hair &amp; Beauty Lounge&nbsp;· Kirchplatz 4&nbsp;· Bad Saulgau<span class="fsep">&nbsp;· </span><a href="https://www.instagram.com/hairandbeauty_lounge_bymelanie/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
+<footer>© Hair &amp; Beauty Lounge&nbsp;· Kirchplatz 4&nbsp;· Bad&nbsp;Saulgau<span class="fsep">&nbsp;· </span><a href="https://www.instagram.com/hairandbeauty_lounge_bymelanie/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></footer>
 
 <div class="sticky"><a class="btn light scall" href="tel:+49758151698" aria-label="Anrufen: 07581 51698">Anrufen</a><button class="btn gold" data-book>Termin buchen</button></div>
 
@@ -1883,6 +1884,9 @@ if(location.hash==="#buchen"){history.replaceState(null,"",location.pathname);co
   k.style.bottom="auto";k.style.top=Math.max(8,y)+"px"};
  place();addEventListener("resize",place);addEventListener("load",place);setTimeout(place,1000);setTimeout(place,2000);
  if(q){q.addEventListener("transitionend",place);if(window.ResizeObserver)new ResizeObserver(place).observe(q)}})();
+if(/[?&]de(=|&|$)/.test(location.search))document.querySelectorAll('a[href="impressum.html"],a[href="datenschutz.html"]').forEach(a=>a.href=a.getAttribute("href")+"?de");
+if(matchMedia("(prefers-reduced-motion: reduce)").matches){const mg=document.querySelector(".abar .mega");if(mg&&mg.pauseAnimations){mg.pauseAnimations();mg.setCurrentTime(0)}}
+addEventListener("pageshow",e=>{if(e.persisted&&typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false)});
 /* Team-Profile */
 const outside=(d,e)=>{const r=d.getBoundingClientRect();return e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)};
 document.querySelectorAll("dialog.prof,dialog.legal").forEach(d=>{d.addEventListener("close",()=>document.documentElement.style.overflow="")});
