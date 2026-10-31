@@ -1346,7 +1346,7 @@ html{scrollbar-gutter:stable}
 @keyframes megaWelle{0%,80%,100%{opacity:1}85%{opacity:.25}91%{opacity:1}}
 @media (prefers-reduced-motion:reduce){.abar .mega,.abar .mega path{animation:none}}
 /* Blick über Megafon und Titel, von links nach rechts (nur auf Schrift und Symbol) */
-.abar .atx{padding-right:.2em;margin-right:-.2em;background:linear-gradient(100deg,var(--gold-d) 40%,#d9aab3 46%,#f6e4e7 50%,#d9aab3 54%,var(--gold-d) 60%) 100% 0/300% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:aBlick 9s cubic-bezier(.45,0,.55,1) infinite}
+.abar .atx{padding-right:.2em;margin-right:-.2em;background:linear-gradient(100deg,var(--gold-d) 40%,#bf8893 46%,#cd9fa8 50%,#bf8893 54%,var(--gold-d) 60%) 100% 0/300% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:aBlick 9s cubic-bezier(.45,0,.55,1) infinite}
 @keyframes aBlick{0%,40%{background-position:100% 0}72%,100%{background-position:0 0}}
 @media (prefers-reduced-motion:reduce){.abar .atx{animation:none}}
 /* Tablet hochkant (701–900): ruhiger */
@@ -1362,7 +1362,8 @@ html{scrollbar-gutter:stable}
 .hshort .go,.allp,.tl2{position:relative}
 .hshort .go::after,.allp::after,.tl2::after{content:"";position:absolute;left:-6px;right:-6px;top:-10px;bottom:-10px}
 .brands li span{font-size:12px}
-@media (max-width:359px){.hours span{white-space:normal!important;overflow-wrap:anywhere}}
+@media (max-width:359px){.hours>span:nth-child(odd){white-space:normal!important}}
+@media (max-width:339px){.spt span{white-space:normal}}
 @media (max-width:400px){#senioren .stx .kicker{font-size:min(13px,3.25vw);letter-spacing:.1em}}
 @media (min-width:701px) and (max-width:800px){.brands li b{font-size:14px}}
 .tl2::after{top:-5px}
@@ -1384,7 +1385,7 @@ html{scrollbar-gutter:stable}
 <body id="top">
 
 
-<a class="abar" href="#" data-book data-cat="Angebote" role="button" aria-haspopup="dialog"><b><svg class="mega" viewBox="0 0 27 24" aria-hidden="true" fill="none" stroke="url(#megaBlick)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="megaBlick" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="12" y2="0"><stop offset="0" stop-color="currentColor"/><stop offset=".5" stop-color="#f6e4e7"/><stop offset="1" stop-color="currentColor"/><animateTransform attributeName="gradientTransform" type="translate" values="-12 0;-12 0;30 0;30 0" keyTimes="0;.36;.46;1" dur="9s" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1" repeatCount="indefinite"/></linearGradient></defs><path d="M3.5 10.2v3.6c0 .6.5 1.1 1.1 1.1h1.9l7 4.1V5L6.5 9.1H4.6c-.6 0-1.1.5-1.1 1.1z"/><path d="M7.2 15l1.4 4.3"/><path class="mw1" d="M16.6 9.6a3.4 3.4 0 0 1 0 4.8"/><path class="mw2" d="M19.2 7.2a7 7 0 0 1 0 9.6"/><path class="mw3" d="M21.8 4.6a10.6 10.6 0 0 1 0 14.8"/></svg><span class="atx">Jubiläums-Aktion im November</span></b><em>Ein Jahr Hair &amp; Beauty Lounge!</em><span class="al">Strähnen-Paket ab&nbsp;149&nbsp;€ · Herrenschnitt nach Wunsch&nbsp;25&nbsp;€ · Kinder ab&nbsp;10&nbsp;€</span><span class="as">Strähnen-Paket ab&nbsp;149&nbsp;€ · Kinder ab&nbsp;10&nbsp;€<br>Herrenschnitt nach Wunsch&nbsp;25&nbsp;€&nbsp;→</span><i>Jetzt buchen&nbsp;→</i></a>
+<a class="abar" href="#" data-book data-cat="Angebote" role="button" aria-haspopup="dialog"><b><svg class="mega" viewBox="0 0 27 24" aria-hidden="true" fill="none" stroke="url(#megaBlick)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="megaBlick" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="12" y2="0"><stop offset="0" stop-color="currentColor"/><stop offset=".5" stop-color="#cd9fa8"/><stop offset="1" stop-color="currentColor"/><animateTransform attributeName="gradientTransform" type="translate" values="-12 0;-12 0;30 0;30 0" keyTimes="0;.36;.46;1" dur="9s" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1" repeatCount="indefinite"/></linearGradient></defs><path d="M3.5 10.2v3.6c0 .6.5 1.1 1.1 1.1h1.9l7 4.1V5L6.5 9.1H4.6c-.6 0-1.1.5-1.1 1.1z"/><path d="M7.2 15l1.4 4.3"/><path class="mw1" d="M16.6 9.6a3.4 3.4 0 0 1 0 4.8"/><path class="mw2" d="M19.2 7.2a7 7 0 0 1 0 9.6"/><path class="mw3" d="M21.8 4.6a10.6 10.6 0 0 1 0 14.8"/></svg><span class="atx">Jubiläums-Aktion im November</span></b><em>Ein Jahr Hair &amp; Beauty Lounge!</em><span class="al">Strähnen-Paket ab&nbsp;149&nbsp;€ · Herrenschnitt nach Wunsch&nbsp;25&nbsp;€ · Kinder ab&nbsp;10&nbsp;€</span><span class="as">Strähnen-Paket ab&nbsp;149&nbsp;€ · Kinder ab&nbsp;10&nbsp;€<br>Herrenschnitt nach Wunsch&nbsp;25&nbsp;€&nbsp;→</span><i>Jetzt buchen&nbsp;→</i></a>
 <header>
   <div class="wrap nav">
     <a class="logo" href="#top" aria-label="Hair &amp; Beauty Lounge by Melanie Maurus"><span class="lt">Hair<i class="lgap"></i>&amp; Beauty</span><span class="ls">lounge</span><span class="lb">by Melanie Maurus</span></a>
@@ -1725,7 +1726,7 @@ function close(fromPop){if(!bk.classList.contains("open"))return;bk.classList.re
 let popSkip=false;
 // Fenster schließen: Seite bleibt, wo sie ist (springt nicht zum #Abschnitt aus der Adresse)
 const keepY=()=>{const y=scrollY;requestAnimationFrame(()=>{scrollTo(0,y);requestAnimationFrame(()=>scrollTo(0,y))})};
-addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(popSkip){popSkip=false;keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
+addEventListener("popstate",()=>{if(typeof hdr!=="undefined"&&hdr.classList.contains("mo"))menu(false);if(popSkip){popSkip=false;if(window._goHash){const h=window._goHash;window._goHash=null;history.pushState(null,"",h);const el=document.querySelector(h);if(el)el.scrollIntoView();return}keepY();return}const d=document.querySelector("dialog[open]");if(d){d._pop=1;d.close();keepY();return}const o=bk.classList.contains("open");close(true);if(o)keepY()});
 document.getElementById("close").onclick=()=>close();
 bk.addEventListener("click",e=>{if(e.target===bk)close()});
 document.addEventListener("keydown",e=>{if(!bk.classList.contains("open")||document.querySelector("dialog[open]"))return;if(e.key==="Escape")close();
@@ -1902,10 +1903,13 @@ document.querySelectorAll("dialog.prof:not(.svcp)").forEach(d=>{d.querySelector(
 const hdr=document.querySelector("header"),bg=document.getElementById("burger");
 {const hl=document.querySelector(".hlogo");const f=()=>hdr.classList.toggle("atop",hl.getBoundingClientRect().bottom>70);addEventListener("scroll",f,{passive:true});f()}
 const menu=o=>{hdr.classList.toggle("mo",o);document.body.classList.toggle("menuopen",o);document.documentElement.style.overflow=o?"hidden":"";bg.setAttribute("aria-expanded",o);bg.setAttribute("aria-label",o?"Menü schließen":"Menü öffnen")};
-bg.onclick=()=>{const o=!hdr.classList.contains("mo");menu(o);if(o){const a=hdr.querySelector(".nav ul a");if(a)a.focus()}};
-hdr.querySelectorAll(".nav ul a").forEach(a=>a.addEventListener("click",()=>menu(false)));
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&hdr.classList.contains("mo"))menu(false)});
-document.addEventListener("click",e=>{if(hdr.classList.contains("mo")&&!hdr.contains(e.target))menu(false)});
+// Menü mit eigenem Verlaufsschritt: „Zurück“ schließt erst das Menü
+const menuOpen=()=>{menu(true);if(!(history.state&&history.state.mo))history.pushState({mo:1},"")};
+const menuClose=()=>{menu(false);if(history.state&&history.state.mo){popSkip=true;history.back()}};
+bg.onclick=()=>{const o=!hdr.classList.contains("mo");o?menuOpen():menuClose();if(o){const a=hdr.querySelector(".nav ul a");if(a)a.focus()}};
+hdr.querySelectorAll(".nav ul a").forEach(a=>a.addEventListener("click",e=>{const h=a.getAttribute("href");if(!hdr.classList.contains("mo"))return;if(h&&h[0]==="#"&&history.state&&history.state.mo){e.preventDefault();window._goHash=h;menuClose()}else menu(false)}));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&hdr.classList.contains("mo"))menuClose()});
+document.addEventListener("click",e=>{if(hdr.classList.contains("mo")&&!hdr.contains(e.target))menuClose()});
 /* Leistungen: Karte öffnet Panel mit allen Preisen */
 const SV={
  damen:{t:"Damen",img:"svc_damen",v:3,cat:"Damen",i:"Haarschnitt für jede Haarlänge, mit oder ohne Styling. Föhnen, Glätten, Beachwaves oder Legen bekommt ihr auch einzeln.",g:[["Haarschnitt","Damen",n=>!/^(Schnellpflege|Haarkur)$/.test(n)],["Styling","Styling",n=>n!=="Hochsteckfrisur"&&!/dauerwelle/i.test(n)],["Dauerwelle","Styling",n=>/dauerwelle/i.test(n)],["Pflege-Extras","Damen",n=>/^(Schnellpflege|Haarkur)$/.test(n)]]},
